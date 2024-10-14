@@ -1,0 +1,193 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('background.png'); /* Set the background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and heading */
+    padding: 20px; /* Padding for header */
+    background-color: rgba(217, 83, 79, 0.8); /* Slightly transparent background for contrast */
+}
+
+/* Logo Styles */
+.logo img {
+    max-width: 100px; /* Maximum width for logo */
+    height: auto; /* Maintain aspect ratio */
+}
+.logo img {
+    max-width: 1000px; /* Maximum width for logo */
+    height: auto; /* Maintain aspect ratio */
+}
+/* Centering the Heading */
+header h1 {
+    flex: 1; /* Allow heading to take available space */
+    text-align: center; /* Center the heading */
+    color: #fff; /* Text color */
+    font-size: 2em; /* Font size for heading */
+    margin-right: 20px; /* Add left margin to shift it to the right */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333; /* Dark background for the navbar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 10px 0; /* Padding around the navbar */
+    position: sticky; /* Makes the navbar stick to the top when scrolling */
+    top: 0;
+    z-index: 1000; /* Ensures navbar stays on top of other elements */
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list styling */
+    display: flex; /* Flexbox layout for horizontal alignment */
+    justify-content: center; /* Center-align the navigation items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    margin: 0 20px; /* Space between each nav item */
+}
+
+nav a {
+    color: black; /* White text for links */
+    font-size: 18px; /* Larger font size for better readability */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 15px; /* Padding around each link for larger clickable area */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+    border-radius: 5px; /* Rounded corners for a modern look */
+}
+
+nav a:hover {
+    background-color: #4CAF50; /* Green background on hover */
+    color: black; /* White text on hover */
+}
+
+nav a.active {
+    background-color: #4CAF50; /* Green background for the active page link */
+    color: black; /* White text for active link */
+}
+
+/* Main Section Styles */
+main {
+    max-width: 800px; /* Limit the width of the main section */
+    margin: 40px auto; /* Center the main section with margin */
+    padding: 20px; /* Padding for main content */
+    background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Section Headings */
+h2 {
+    margin-top: 20px; /* Space above section headings */
+    color: #d9534f; /* Red color for headings */
+}
+
+/* General Menu Section Styling */
+section h3 {
+    font-size: 26px;
+    color: #4CAF50; /* Green color for section headers */
+    border-bottom: 2px solid #4CAF50; /* Bottom border for emphasis */
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+ul li {
+    background-color: #f9f9f9; /* Light grey background for each menu item */
+    margin-bottom: 15px; /* Space between items */
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+ul li:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    background-color: #e0f7e9; /* Light green background on hover */
+}
+
+ul li strong {
+    font-size: 20px; /* Make dish names stand out */
+    color: #333; /* Darker color for contrast */
+}
+
+ul li .price {
+    float: right; /* Align price to the right */
+    font-weight: bold; /* Bold price */
+    color: #333; /* Price color */
+}
+
+ul li p {
+    margin: 10px 0 0 0; /* Margin between description and price */
+    color: #777; /* Grey text for description */
+    font-size: 16px; /* Slightly smaller text for the description */
+    line-height: 1.5; /* Better readability */
+}
+
+/* Specific Section Styles */
+h3:after {
+    content: ""; /* Add a line after the heading */
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #4CAF50; /* Same green as the heading */
+    margin-top: 10px;
+}
+
+/* Appetizers Styling */
+h3.appetizers {
+    color: #ff5733; /* Orange for Appetizers */
+    border-bottom-color: #ff5733;
+}
+
+/* Drinks Styling */
+h3.drinks {
+    color: #3498db; /* Blue for Drinks */
+    border-bottom-color: #3498db;
+}
+
+/* Desserts Styling */
+h3.desserts {
+    color: #e74c3c; /* Red for Desserts */
+    border-bottom-color: #e74c3c;
+}
+
+/* Starter Styling (Main Courses) */
+h3.starters {
+    color: #2ecc71; /* Green for Main Courses */
+    border-bottom-color: #2ecc71;
+}
+.price {
+    float: right; /* Align price to the right */
+    font-weight: bold; /* Bold font for prices */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center; /* Center align text */
+    padding: 20px; /* Padding for footer */
+    background-color: rgba(217, 83, 79, 0.8); /* Match restaurant color with transparency */
+    color: #fff; /* Text color */
+}
